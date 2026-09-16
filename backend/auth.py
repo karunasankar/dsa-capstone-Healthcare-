@@ -1,8 +1,9 @@
 from datetime import datetime, timedelta, timezone
+import os
 from passlib.context import CryptContext
 import jwt
 
-SECRET_KEY = "DEV_SECRET_KEY_PROTOTYPE_ONLY"
+SECRET_KEY = os.environ.get("SECRET_KEY", "DEV_SECRET_KEY_PROTOTYPE_ONLY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 

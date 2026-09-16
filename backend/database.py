@@ -3,7 +3,7 @@ import json
 from typing import List, Dict, Any
 import os
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "healthcare.db")
+DB_PATH = os.environ.get("DATABASE_PATH", os.path.join(os.path.dirname(__file__), "healthcare.db"))
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
