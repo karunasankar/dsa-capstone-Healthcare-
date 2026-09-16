@@ -1,0 +1,22 @@
+﻿# Environment variables
+.env
+.env.*
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+
+# Node / React
+node_modules/
+frontend/dist/
+dist/
+build/
