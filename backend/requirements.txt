@@ -7,3 +7,6 @@ passlib[argon2]
 argon2-cffi
 PyJWT
 cryptography
+python-dotenv
+
+python-dotenv
